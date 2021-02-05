@@ -1,10 +1,6 @@
 <template>
 <div class="mainpage" ref="mainpage" id="mainpage">
 
-
-
-
-
 <div>
         <grid-layout :layout.sync="layout" :col-num="12" :row-height="rowheight" :is-draggable="true" :is-resizable="true" :vertical-compact="true" :use-css-transforms="true" >
             <grid-item v-for="item in layout" v-bind:key="item.i" :x="item.x" :y="item.y" :w="item.w" :h="item.h" :i="item.i" drag-allow-from=".vue-draggable-handle" drag-ignore-from=".no-drag" style="overflow:hidden">
@@ -33,9 +29,17 @@
         </grid-layout>
     </div>
 
-
 <div>
 </template>
+
+<style>
+* {
+    margin: 0;
+}
+</style>
+<style>
+@import './css/globaltheme.css';
+</style>
 
 <script>
 import TradingVue from 'trading-vue-js'
@@ -90,3 +94,7 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@import './css/vue-grid.css';
+</style>
