@@ -27,5 +27,8 @@
     "dependencies": {
         "trading-vue-js": "^1.0.0",
         "vue": "^2.6.12"
+        "tvjs-overlays": "^0.3.0",
+        "tvjs-xp": "^0.3.0",        
+        "vue-grid-layout": "^2.3.12"
     }
 }
